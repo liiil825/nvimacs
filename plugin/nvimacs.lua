@@ -16,10 +16,12 @@ vim.keymap.set("i", "<C-n>", "<Down>", { silent = true })
 -- move-beginning-of-line
 vim.keymap.set("n", "<C-a>", "^", { silent = true })
 vim.keymap.set("i", "<C-a>", "<C-o>^", { silent = true })
+vim.keymap.set("v", "<C-a>", "^", { silent = true })
 
 -- move-end-of-line
 vim.keymap.set("n", "<C-e>", "$", { silent = true })
 vim.keymap.set("i", "<C-e>", "<C-o>$", { silent = true })
+vim.keymap.set("v", "<C-e>", "$", { silent = true })
 
 -- backward-sentence
 vim.keymap.set("i", "<M-a>", "<C-o>(", { silent = true })
