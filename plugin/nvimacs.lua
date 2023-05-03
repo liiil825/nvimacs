@@ -67,8 +67,7 @@ vim.keymap.set("i", "<C-k>", function()
 
 	return "<C-o>dw"
 end, { silent = true, expr = true })
-vim.keymap.set("c", "<C-j>", "<Down>", { silent = true })
-vim.keymap.set("c", "<C-k>", "<Up>", { silent = true })
+vim.keymap.set("c", "<C-k>", "<C-f>d$<C-c><End>", { silent = true })
 
 -- kill-word
 vim.keymap.set("i", "<M-d>", function()
